@@ -1,0 +1,11 @@
+<% @users.each do |user| %>
+  <p> <%= user.name %> </p>
+  <p> <%= user.address %> </p>
+  <ul>
+    <% user.pets.each do |pet| %>
+      <li> <%= pet.name %> </li>
+    <% end %>
+  </ul>
+
+
+<% end %>
